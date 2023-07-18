@@ -7,7 +7,9 @@ const App = () => {
   return (
     <div>
       <button className='btn' onClick={()=>setShow(true)}>Show Model</button>
-      <Modal visible={show} onClose={()=>setShow(false)}/>
+      <Modal visible={show} onClose={()=>setShow(false)}>
+        <p>This is the content of the modal.</p>
+      </Modal>
     </div>
   )
 }
