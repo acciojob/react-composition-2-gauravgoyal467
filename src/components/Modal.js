@@ -5,7 +5,7 @@ const Model = ({visible,onClose,children}) => {
   return (
     <div className='model-overlay'onClick={onClose}>
         <button className="model-close" >Close</button>
-        <p>className="model-p"{children}</p>
+        <p className="model-p">{children}</p>
     </div>
   )
 }
