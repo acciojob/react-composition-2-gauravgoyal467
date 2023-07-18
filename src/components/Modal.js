@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Model = ({visible,onClose,children}) => {
+const Model = ({visible,onClose}) => {
     if (!visible) return null;
   return (
     <div className='model-overlay'onClick={onClose}>
         <button className="model-close" >Close</button>
-        {children}
+        <p className="model-p">This is the content of the modal.</p>
     </div>
   )
 }
